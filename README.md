@@ -1,5 +1,7 @@
 # git-context-mcp
 
+<img src="assets/logo.png" alt="git-context-mcp" width="180" align="right" />
+
 Semantic git queries via MCP. Beyond `git log` — answer who/what/when/why about any line, file, or branch.
 
 Pairs with [terminal-history-mcp](https://github.com/HasanJahidul/terminal-history-mcp) and [localhost-mcp](https://github.com/HasanJahidul/localhost-mcp). Together: what you ran, what's running, what you changed.
