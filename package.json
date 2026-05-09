@@ -1,0 +1,59 @@
+{
+  "name": "git-context-mcp",
+  "version": "0.1.0",
+  "description": "Semantic git queries via MCP. Beyond git log — answer who/what/when/why about any line, file, or branch.",
+  "type": "module",
+  "bin": {
+    "git-context-mcp": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "!dist/test",
+    "!dist/**/*.test.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "node --test dist/test/*.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "git",
+    "github",
+    "blame",
+    "co-change",
+    "code-ownership",
+    "claude"
+  ],
+  "author": "Jahidul Hasan <contact@hasanjahidul.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/HasanJahidul/git-context-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasanJahidul/git-context-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HasanJahidul/git-context-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@octokit/rest": "^21.0.2",
+    "better-sqlite3": "^11.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
