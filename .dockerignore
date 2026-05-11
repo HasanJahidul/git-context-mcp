@@ -1,0 +1,14 @@
+node_modules
+src
+test
+.git
+.github
+.vscode
+*.md
+demo.gif
+demo.tape
+assets
+scripts
+tsconfig.json
+.gitignore
+.npmignore

@@ -1,6 +1,6 @@
 {
   "name": "git-insight-mcp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Semantic git queries via MCP. Beyond git log — answer who/what/when/why about any line, file, or branch.",
   "type": "module",
   "bin": {
